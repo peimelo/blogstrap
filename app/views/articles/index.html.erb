@@ -1,11 +1,24 @@
-<h1>Articles</h1>
+<%= render_if @highlights[0].present?, 'longer_featured', article: @highlights[0] %>
 
-<%= link_to 'New Article', new_article_path %>
+<div class="row mb-2">
+  <%= render_if @highlights[1].present?, 'medium_featured', article: @highlights[1] %>
+  <%= render_if @highlights[2].present?, 'medium_featured', article: @highlights[2] %>
+</div>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-    </li>
-  <% end %>
-</ul>
+<div class="row g-5">
+  <div class="col-md-8">
+    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+      From my Experience
+    </h3>
+
+    <p>
+      <%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %>
+    </p>
+
+    <%= render @articles %>
+
+    <%= render 'pagination' %>
+  </div>
+
+  <%= render 'right_side' %>
+</div>
