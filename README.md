@@ -46,3 +46,5 @@ rails db:migrate
 # run the project
 rails s
 ```
+
+Open the browser at the address `http://localhost:3000`
