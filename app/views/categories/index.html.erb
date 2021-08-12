@@ -1,7 +1,8 @@
 <h1>Categories</h1>
 
 <p>
-  <%= link_to 'New Category', new_category_path, class: 'btn btn-primary' %>
+  <%= link_to 'New Category', new_category_path,
+  class: 'btn btn-primary' if policy(:category).new? %>
 </p>
 
 <table class="table table-striped table-hover table-bordered">
@@ -17,8 +18,9 @@
       <tr>
         <td><%= category.name %></td>
         <td>
-          <%= link_to 'Edit', edit_category_path(category) %>
-          <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Edit', edit_category_path(category) if policy(category).edit? %>
+          <%= link_to 'Destroy', category,
+          method: :delete, data: { confirm: 'Are you sure?' } if policy(category).destroy? %>
         </td>
       </tr>
     <% end %>

@@ -6,12 +6,13 @@
 
   <p><%= @article.body %></p>
 
-  <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-secondary' %>
+  <%= link_to 'Edit', edit_article_path(@article),
+  class: 'btn btn-secondary' if policy(@article).update? %>
 
   <%= link_to 'Destroy', article_path(@article),
     method: :delete,
     data: { confirm: 'Are you sure?' },
-    class: 'btn btn-danger' %>
+    class: 'btn btn-danger' if policy(@article).destroy? %>
 
   <%= link_to 'Back', root_path, class: 'btn btn-secondary' %>
 </article>
