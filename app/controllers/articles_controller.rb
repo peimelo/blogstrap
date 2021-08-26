@@ -11,6 +11,7 @@ class ArticlesController < ApplicationController
 
     @highlights = Article.includes(:category, :user)
                          .filter_by_category(category)
+                         .filter_by_archive(params[:month_year])
                          .desc_order
                          .first(3)
 
@@ -19,8 +20,11 @@ class ArticlesController < ApplicationController
     @articles = Article.includes(:category, :user)
                        .without_highlights(highlight_ids)
                        .filter_by_category(category)
+                       .filter_by_archive(params[:month_year])
                        .desc_order
                        .page(current_page)
+
+    @archives = Article.group_by_month(:created_at, format: '%B %Y').count
   end
 
   # rubocop: enable Metrics/AbcSize, Metrics/MethodLength
