@@ -15,4 +15,14 @@
     class: 'btn btn-danger' if policy(@article).destroy? %>
 
   <%= link_to 'Back', root_path, class: 'btn btn-secondary' %>
+
+  <h2 class="mt-3">Comments</h2>
+  <%= render @article.comments %>
+
+  <h2>Add a comment:</h2>
+  <% if policy(:comment).create? %>
+    <%= render 'comments/form' %>
+  <% else %>
+    Please, login to create a comment.
+  <% end %>
 </article>

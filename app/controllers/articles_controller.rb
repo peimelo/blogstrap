@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
   include Paginable
 
   before_action :authenticate_user!, except: %i[index show]
-  before_action :set_article, only: %i[show edit update destroy]
+  before_action :set_article, only: %i[edit update destroy]
+  before_action :set_categories, only: %i[new create edit update]
 
   # rubocop: disable Metrics/AbcSize, Metrics/MethodLength
   def index
@@ -28,7 +29,10 @@ class ArticlesController < ApplicationController
   end
 
   # rubocop: enable Metrics/AbcSize, Metrics/MethodLength
-  def show; end
+  def show
+    @article = Article.includes(comments: :user).find(params[:id])
+    authorize @article
+  end
 
   def new
     @article = current_user.articles.new
@@ -69,5 +73,9 @@ class ArticlesController < ApplicationController
   def set_article
     @article = Article.find(params[:id])
     authorize @article
+  end
+
+  def set_categories
+    @categories = Category.sorted
   end
 end

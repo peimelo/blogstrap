@@ -1,0 +1,7 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title"><%= month_day_comma_year(comment.created_at) %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Commenter: <%= comment.user.email %></h6>
+    <p class="card-text"><%= comment.body %></p>
+  </div>
+</div>
