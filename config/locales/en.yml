@@ -30,4 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: 'Hello world'
+  activerecord:
+    errors:
+      messages:
+        complexity: 'complexity requirement not met. Please use: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
