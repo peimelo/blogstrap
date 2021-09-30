@@ -37,6 +37,9 @@ cd blogstrap
 # install Ruby on Rails dependencies
 bundle install
 
+# install Node dependencies
+yarn install
+
 # create the development and test databases
 rails db:create
 
