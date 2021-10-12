@@ -78,4 +78,4 @@ Save and close the `config/credentials.yml.enc` file.
 If you want to use another email provider, change it in the file
 `config/environments/production.rb`.
 
-Open the browser at the address `https://blogstrap.herokuapp.com`
+Open the browser at the address [https://blogstrap.herokuapp.com](https://blogstrap.herokuapp.com)
