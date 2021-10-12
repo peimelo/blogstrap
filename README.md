@@ -51,3 +51,31 @@ rails s
 ```
 
 Open the browser at the address `http://localhost:3000`
+
+## Configuration for Production
+
+```bash
+# delete the config/credentials.yml.enc file
+rm config/credentials.yml.enc
+
+# run the command to create credentials and master key (replace 'code' if you don't use VS Code)
+EDITOR="code --wait" bin/rails credentials:edit
+```
+
+Add the information below in the [credentials](https://guides.rubyonrails.org/security.html#custom-credentials) to configure the email used by the Devise
+gem (replace with the values ​​you want):
+
+```yml
+# ... your content above
+
+gmail:
+  user_name: your@email.com
+  password: your_password
+```
+
+Save and close the `config/credentials.yml.enc` file.
+
+If you want to use another email provider, change it in the file
+`config/environments/production.rb`.
+
+Open the browser at the address `https://blogstrap.herokuapp.com`
