@@ -8,13 +8,13 @@ This repository is part of the [Curso Ruby on Rails 6 MVC](https://www.youtube.c
   <tr>
     <td>Ruby version</td>
     <td>
-      3.0.1
+      3.0.2
     </td>
   </tr>
   <tr>
     <td>Rails version</td>
     <td>
-      6.1.3.x
+      6.1.4.1
     </td>
   </tr>
   <tr>
@@ -69,6 +69,7 @@ gem (replace with the values ​​you want):
 # ... your content above
 
 gmail:
+  mailer_sender: 'Sender <your@email.com>'
   user_name: your@email.com
   password: your_password
 ```

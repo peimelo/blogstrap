@@ -1,3 +1,3 @@
 <%= month_day_comma_year(article.created_at) %> by
-<%= article.user.email %> in
+<%= sub_masked_email(article.user.email) %> in
 <%= article.category.name %>
