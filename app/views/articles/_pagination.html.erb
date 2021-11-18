@@ -1,4 +1,4 @@
 <nav class="blog-pagination" aria-label="Pagination">
-  <%= link_to_next_page @articles, 'Older', class: 'btn btn-outline-primary' %>
-  <%= link_to_previous_page @articles, 'Newer', class: 'btn btn-outline-primary' %>
+  <%= link_to_next_page @articles, t('app.pagination.older'), class: 'btn btn-outline-primary' %>
+  <%= link_to_previous_page @articles, t('app.pagination.newer'), class: 'btn btn-outline-primary' %>
 </nav>

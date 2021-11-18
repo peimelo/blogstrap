@@ -1,6 +1,6 @@
 module ApplicationHelper
   def month_day_comma_year(datetime)
-    datetime.strftime('%B %e, %Y')
+    l(datetime, format: '%B %e, %Y').capitalize
   end
 
   def render_if(condition, template, record)

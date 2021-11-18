@@ -6,7 +6,7 @@
 
   <p><%= truncate(article.body, length: 150) %></p>
 
-  <p><%= link_to 'Continue reading ...', article, class: 'btn btn-link' %></p>
+  <p><%= link_to t('articles.continue_reading'), article, class: 'btn btn-link' %></p>
 
   <%= link_to 'Edit', edit_article_path(article),
               class: 'btn btn-primary' if policy(article).update? %>

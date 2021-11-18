@@ -3,7 +3,7 @@
     <h1 class="display-4 fst-italic"><%= article.title %></h1>
     <p class="lead my-3"><%= truncate(article.body, length: 100) %></p>
     <p class="lead mb-0">
-      <%= link_to 'Continue reading...', article, class: 'text-white fw-bold' %>
+      <%= link_to t('articles.continue_reading'), article, class: 'text-white fw-bold' %>
     </p>
   </div>
 </div>

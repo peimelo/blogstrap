@@ -1,0 +1,18 @@
+en:
+  app:
+    title: Paulo Melo's Blog
+    menu:
+      categories: Categories
+      edit_user: Edit User
+      sign_out: Sign out
+      sign_in: Sign in
+      sign_up: Sign up
+    footer:
+      back_to_top: Back to top
+      template_info: Blog template built for
+    pagination:
+      older: Older
+      newer: Newer
+    words:
+      by: by
+      in: in

@@ -1,0 +1,11 @@
+en:
+  articles:
+    continue_reading: Continue reading...
+    about:
+      title: About
+      description: I'm Paulo Melo and I like teaching Ruby on Rails programming.
+    archives: Archives
+    elsewhere: Elsewhere
+    index:
+      subtitle: From my Experience
+      new_article: New Article

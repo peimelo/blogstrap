@@ -1,0 +1,5 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        complexity: 'complexity requirement not met. Please use: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
