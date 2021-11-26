@@ -6,23 +6,23 @@
 
   <p><%= @article.body %></p>
 
-  <%= link_to 'Edit', edit_article_path(@article),
+  <%= link_to t('app.button.edit'), edit_article_path(@article),
   class: 'btn btn-primary' if policy(@article).update? %>
 
-  <%= link_to 'Destroy', article_path(@article),
+  <%= link_to t('app.button.destroy'), article_path(@article),
     method: :delete,
-    data: { confirm: 'Are you sure?' },
+    data: { confirm: t('app.message.confirm_destroy') },
     class: 'btn btn-danger' if policy(@article).destroy? %>
 
-  <%= link_to 'Back', root_path, class: 'btn btn-secondary' %>
+  <%= link_to t('app.button.back'), root_path, class: 'btn btn-secondary' %>
 
-  <h2 class="mt-3">Comments</h2>
+  <h2 class="mt-3"><%= t('.comments') %></h2>
   <%= render @article.comments %>
 
-  <h2>Add a comment:</h2>
+  <h3><%= t('.add_comment') %></h3>
   <% if policy(:comment).create? %>
     <%= render 'comments/form' %>
   <% else %>
-    Please, login to create a comment.
+    <%= t('.login_create_comment') %>
   <% end %>
 </article>

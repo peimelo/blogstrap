@@ -1,0 +1,9 @@
+en:
+ pundit:
+   default: You are not authorized to perform this action.
+   category_policy:
+     edit?: 'You cannot edit this category!'
+     update?: 'You cannot edit this category!'
+     new?: 'You cannot create categories!'
+     create?: 'You cannot create categories!'
+     destroy?: 'You cannot destroy this category!'

@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      category:
+        one: Category
+        other: Categories
+    attributes:
+      category:
+        articles: Articles
+        name: Name

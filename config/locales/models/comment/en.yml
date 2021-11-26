@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    models:
+      comment:
+        one: Comment
+        other: Comments
+    attributes:
+      comment:
+        body: Body

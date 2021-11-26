@@ -1,0 +1,9 @@
+pt-BR:
+ pundit:
+   default: Você não está autorizado a realizar esta ação.
+   category_policy:
+     edit?: 'Você não pode alterar essa categoria!'
+     update?: 'Você não pode alterar essa categoria!'
+     new?: 'Você não pode criar categorias!'
+     create?: 'Você não pode criar categorias!'
+     destroy?: 'Você não pode excluir essa categoria!'

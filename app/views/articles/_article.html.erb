@@ -8,11 +8,11 @@
 
   <p><%= link_to t('articles.continue_reading'), article, class: 'btn btn-link' %></p>
 
-  <%= link_to 'Edit', edit_article_path(article),
+  <%= link_to t('app.button.edit'), edit_article_path(article),
               class: 'btn btn-primary' if policy(article).update? %>
 
-  <%= link_to 'Destroy', article_path(article),
+  <%= link_to t('app.button.destroy'), article_path(article),
     method: :delete,
-    data: { confirm: 'Are you sure?' },
+    data: { confirm: t('app.message.confirm_destroy') },
     class: 'btn btn-danger' if policy(article).destroy? %>
 </article>

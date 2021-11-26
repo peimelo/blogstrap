@@ -3,7 +3,7 @@
   <ol class="list-unstyled mb-0">
     <% @archives.each do |month_year, count| %>
       <li>
-        <%= link_to "#{month_year.capitalize} (#{count})", articles_path(month_year: month_year),
+        <%= link_to "#{month_year(month_year)} (#{count})", articles_path(month_year: month_year),
             class: "p-2 link-secondary #{'filter-active' if month_year == params[:month_year]}" %>
       </li>
     <% end %>
