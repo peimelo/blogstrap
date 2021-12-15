@@ -8,7 +8,7 @@ This repository is part of the [Curso Ruby on Rails 6 MVC](https://www.youtube.c
   <tr>
     <td>Ruby version</td>
     <td>
-      3.0.2
+      3.0.3
     </td>
   </tr>
   <tr>
