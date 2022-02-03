@@ -20,7 +20,7 @@ ExceptionNotification.configure do |config|
   if Rails.env.production?
     config.add_notifier :email, {
       email_prefix: '[ERROR] ',
-      sender_address: %("Blogstrap" <#{Rails.application.credentials.gmail[:user_name]}>),
+      sender_address: %("Blogstrap" <#{Rails.application.credentials.zoho[:user_name]}>),
       exception_recipients: Rails.application.credentials.exception_recipients
     }
   end
