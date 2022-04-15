@@ -2,10 +2,10 @@
   <div class="card-body">
     <h5 class="card-title"><%= month_day_comma_year(comment.created_at) %></h5>
     <h6 class="card-subtitle mb-2 text-muted">
-      <%= t 'comments.index.commenter' %>: <%= sub_masked_email(comment.user.email) %>
+      <%= t 'comments.index.commenter' %>: <%= sub_masked_email(comment.user_email) %>
     </h6>
     <p class="card-text"><%= comment.body %></p>
-    <%= link_to t('app.button.destroy'), article_comment_path(@article, comment),
+    <%= link_to t('app.button.destroy'), article_comment_path(article, comment),
       method: :delete,
       data: { confirm: t('app.message.confirm_destroy') },
       class: 'btn btn-danger' if policy(comment).destroy? %>

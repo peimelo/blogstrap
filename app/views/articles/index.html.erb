@@ -18,10 +18,10 @@
 
     <%= render @articles %>
 
-    <%= render 'pagination' %>
+    <%= render 'pagination', articles: @articles %>
   </div>
 
-  <%= render 'right_side' %>
+  <%= render 'right_side', archives: @archives %>
 </div>
 
 <%= content_for :category_filter do %>

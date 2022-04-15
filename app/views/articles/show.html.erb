@@ -17,11 +17,11 @@
   <%= link_to t('app.button.back'), root_path, class: 'btn btn-secondary' %>
 
   <h2 class="mt-3"><%= t('.comments') %></h2>
-  <%= render @article.comments %>
+  <%= render @article.comments, article: @article %>
 
   <h3><%= t('.add_comment') %></h3>
   <% if policy(:comment).create? %>
-    <%= render 'comments/form' %>
+    <%= render 'comments/form', article: @article %>
   <% else %>
     <%= t('.login_create_comment') %>
   <% end %>

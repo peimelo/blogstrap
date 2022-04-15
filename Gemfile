@@ -18,12 +18,14 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 4.1.0'
-  gem 'rack-mini-profiler', '~> 2.0'
-  gem 'listen', '~> 3.3'
-  gem 'spring'
-  gem "letter_opener", "~> 1.7"
   gem "bullet"
+  gem "letter_opener", "~> 1.7"
+  gem 'listen', '~> 3.3'
+  gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rails_best_practices', '~> 1.23', '>= 1.23.1', require: false
+  gem 'rubocop', require: false
+  gem 'spring'
+  gem 'web-console', '>= 4.1.0'
 end
 
 group :test do

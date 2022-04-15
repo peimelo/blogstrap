@@ -7,6 +7,9 @@ class Article < ApplicationRecord
   validates :title, presence: true, length: { minimum: 5 }
   validates :body, presence: true, length: { minimum: 10 }
 
+  delegate :name, to: :category, prefix: true
+  delegate :email, to: :user, prefix: true
+
   paginates_per 10
 
   scope :desc_order, -> { order(created_at: :desc) }
