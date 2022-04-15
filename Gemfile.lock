@@ -303,7 +303,7 @@ DEPENDENCIES
   puma (~> 5.0)
   pundit (~> 2.1)
   rack-mini-profiler (~> 2.0)
-  rails (~> 6.1.4, >= 6.1.4.1)
+  rails (~> 6.1.5)
   rails_best_practices (~> 1.23, >= 1.23.1)
   rolify (~> 6.0)
   rubocop

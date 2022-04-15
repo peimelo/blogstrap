@@ -14,7 +14,7 @@ This repository is part of the [Curso Ruby on Rails 6 MVC](https://www.youtube.c
   <tr>
     <td>Rails version</td>
     <td>
-      6.1.4.1
+      6.1.5
     </td>
   </tr>
   <tr>
