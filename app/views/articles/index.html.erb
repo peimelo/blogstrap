@@ -13,7 +13,11 @@
 
     <p>
       <%= link_to t('articles.new.title'), new_article_path,
-                  class: 'btn btn-success' if user_signed_in? %>
+                  { class: 'btn btn-success',
+                    'data-bs-toggle': 'tooltip',
+                    'data-bs-placement': 'top',
+                    title: t('articles.new.title')
+                  } if user_signed_in? %>
     </p>
 
     <%= render @articles %>
