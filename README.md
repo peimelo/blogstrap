@@ -68,10 +68,18 @@ gem (replace with the values ​​you want):
 ```yml
 # ... your content above
 
+# GMail
 gmail:
   mailer_sender: 'Sender <your@email.com>'
   user_name: your@email.com
   password: your_password
+
+# or Zoho
+zoho:
+  mailer_sender: 'Sender <your@email.com>'
+  user_name: your@email.com
+  password: your_password
+  domain: your_domain.com.br
 
 exception_recipients: exceptions@example.com
 ```
