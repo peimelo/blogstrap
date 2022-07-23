@@ -8,13 +8,13 @@ This repository is part of the [Curso Ruby on Rails 6 MVC](https://www.youtube.c
   <tr>
     <td>Ruby version</td>
     <td>
-      3.0.3
+      3.0.4
     </td>
   </tr>
   <tr>
     <td>Rails version</td>
     <td>
-      6.1.5
+      6.1.6.1
     </td>
   </tr>
   <tr>
