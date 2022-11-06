@@ -133,4 +133,6 @@ Rails.application.configure do
     tls: true,
     enable_starttls_auto: true
   }
+
+  config.hosts << "blogstrap.up.railway.app"
 end
