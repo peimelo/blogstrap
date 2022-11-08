@@ -8,13 +8,13 @@ This repository is part of the [Curso Ruby on Rails 6 MVC](https://www.youtube.c
   <tr>
     <td>Ruby version</td>
     <td>
-      3.0.4
+      3.1.2
     </td>
   </tr>
   <tr>
     <td>Rails version</td>
     <td>
-      6.1.6.1
+      6.1.7
     </td>
   </tr>
   <tr>
@@ -63,7 +63,7 @@ EDITOR="code --wait" bin/rails credentials:edit
 ```
 
 Add the information below in the [credentials](https://guides.rubyonrails.org/security.html#custom-credentials) to configure the email used by the Devise
-gem (replace with the values ​​you want):
+gem (replace with the values you want):
 
 ```yml
 # ... your content above
