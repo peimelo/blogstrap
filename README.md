@@ -92,4 +92,4 @@ If you want to use another email provider, change it in the file
 To configure [Exception Notification](https://github.com/smartinez87/exception_notification), change it in the file
 `config/initializers/exception_notification.rb`.
 
-Open the browser at the address [https://blogstrap.herokuapp.com](https://blogstrap.herokuapp.com)
+Open the browser at the address [https://blogstrap.fly.dev/](https://blogstrap.fly.dev/)
