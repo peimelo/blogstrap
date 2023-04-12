@@ -1,4 +1,4 @@
-# Blogstrap
+# Blogstrap ![Tests](https://github.com/peimelo/blogstrap/actions/workflows/ruby.yml/badge.svg)
 
 Building a blog using Bootstrap 5 with Ruby on Rails 6 in MVC pattern.
 
