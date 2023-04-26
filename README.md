@@ -1,4 +1,4 @@
-# Blogstrap ![Tests](https://github.com/peimelo/blogstrap/actions/workflows/ruby.yml/badge.svg)
+# Blogstrap ![Tests](https://github.com/peimelo/blogstrap/actions/workflows/ruby.yml/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/6f77f0326f9a1e63038d/maintainability)](https://codeclimate.com/github/peimelo/blogstrap/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/6f77f0326f9a1e63038d/test_coverage)](https://codeclimate.com/github/peimelo/blogstrap/test_coverage)
 
 Building a blog using Bootstrap 5 with Ruby on Rails 6 in MVC pattern.
 
